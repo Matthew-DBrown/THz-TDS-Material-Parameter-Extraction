@@ -293,38 +293,38 @@ def plot_n_summary(file_paths, xlims=None, label_cond='side', color_set=colors_1
         
         if label_cond=='side':
             
-            x_pos = f_data[-1]   # Rightmost x value
-            y_pos = avg[-1]   # Corresponding y value
+            x_pos = f_data[-1]
+            y_pos = avg[-1]   
             
             
             ax.annotate(
                 f"{temp_string}", # Text label
-                xy=(x_pos, y_pos),             # Position of text label
-                xytext=(5, 0),                 # Offset the text slightly
-                textcoords="offset points",    # Use offset for position
-                ha="left",                     # Horizontal alignment
-                va="center",                   # Vertical alignment
-                color=color_set[i],               # Match text color to line color
+                xy=(x_pos, y_pos),             
+                xytext=(5, 0),                 
+                textcoords="offset points",    
+                ha="left",                     
+                va="center",                   
+                color=color_set[i],            
                 fontsize=14,
                 fontweight='bold'
                 )   
         
         elif label_cond=='ontop':
             
-            x_pos = f_data[50]#f_data[len(f_data) // 2]    # Middle of x values for central placement
-            y_pos = avg[0] #avg[len(avg) // 2]    # Corresponding y value
+            x_pos = f_data[50]#f_data[len(f_data) // 2]    
+            y_pos = avg[0] #avg[len(avg) // 2]    
 
-            # Place text directly on the graph near the middle of each line
+            
             plt.text(
-                x_pos, y_pos,               # Position
-                f"{temp_string}",                  # Text label
-                color=color_set[i],            # Match text color to line color
-                fontsize=12,                 # Adjust font size as needed
-                fontweight='bold',          # Bold text for readability
-                ha='center',                # Centered horizontally
-                va='center',                # Centered vertically
-                backgroundcolor="white",    # Add a background to improve readability
-                alpha=0.8                   # Transparency for background color
+                x_pos, y_pos,               
+                f"{temp_string}",           
+                color=color_set[i],         
+                fontsize=12,                
+                fontweight='bold',          
+                ha='center',                
+                va='center',                
+                backgroundcolor="white",    
+                alpha=0.8                   
                 )
                 
         elif label_cond=='legend':
@@ -415,18 +415,18 @@ def plot_epsilonR_summary(file_paths, xlims=None, label_cond='side', color_set=c
         
         if label_cond=='side':
             
-            x_pos = f_data[-1]   # Rightmost x value
-            y_pos = avg[-1]   # Corresponding y value
+            x_pos = f_data[-1]   
+            y_pos = avg[-1]   
             
             
             ax.annotate(
                 f"{temp_string}", # Text label
-                xy=(x_pos, y_pos),             # Position of text label
-                xytext=(5, 0),                 # Offset the text slightly
-                textcoords="offset points",    # Use offset for position
-                ha="left",                     # Horizontal alignment
-                va="center",                   # Vertical alignment
-                color=color_set[i],            # Match text color to line color
+                xy=(x_pos, y_pos),             
+                xytext=(5, 0),                 
+                textcoords="offset points",    
+                ha="left",                     
+                va="center",                   
+                color=color_set[i],            
                 fontsize=14,
                 fontweight='bold'
                 )   
@@ -436,17 +436,17 @@ def plot_epsilonR_summary(file_paths, xlims=None, label_cond='side', color_set=c
             x_pos = f_data[50]#f_data[len(f_data) // 2]    # Middle of x values for central placement
             y_pos = avg[0] #avg[len(avg) // 2]    # Corresponding y value
 
-            # Place text directly on the graph near the middle of each line
+            
             plt.text(
-                x_pos, y_pos,               # Position
-                f"{temp_string}",                  # Text label
-                color=color_set[i],            # Match text color to line color
-                fontsize=12,                 # Adjust font size as needed
-                fontweight='bold',          # Bold text for readability
-                ha='center',                # Centered horizontally
-                va='center',                # Centered vertically
-                backgroundcolor="white",    # Add a background to improve readability
-                alpha=0.8                   # Transparency for background color
+                x_pos, y_pos,               
+                f"{temp_string}",           
+                color=color_set[i],         
+                fontsize=12,                
+                fontweight='bold',          
+                ha='center',                
+                va='center',                
+                backgroundcolor="white",    
+                alpha=0.8                   
                 )
                 
         elif label_cond=='legend':
@@ -536,38 +536,38 @@ def plot_lossTan_summary(file_paths, xlims=None, label_cond='side', color_set=co
         
         if label_cond=='side':
             
-            x_pos = f_data[-1]   # Rightmost x value
-            y_pos = avg[-1]   # Corresponding y value
+            x_pos = f_data[-1]
+            y_pos = avg[-1]   
             
             
             ax.annotate(
                 f"{temp_string}", # Text label
-                xy=(x_pos, y_pos),             # Position of text label
-                xytext=(5, 0),                 # Offset the text slightly
-                textcoords="offset points",    # Use offset for position
-                ha="left",                     # Horizontal alignment
-                va="center",                   # Vertical alignment
-                color=color_set[i],            # Match text color to line color
+                xy=(x_pos, y_pos),             
+                xytext=(5, 0),                 
+                textcoords="offset points",    
+                ha="left",                     
+                va="center",                   
+                color=color_set[i],            
                 fontsize=14,
                 fontweight='bold'
                 )   
         
         elif label_cond=='ontop':
             
-            x_pos = f_data[50]#f_data[len(f_data) // 2]    # Middle of x values for central placement
-            y_pos = avg[0] #avg[len(avg) // 2]    # Corresponding y value
+            x_pos = f_data[50]#f_data[len(f_data) // 2]    
+            y_pos = avg[0] #avg[len(avg) // 2]    
 
             # Place text directly on the graph near the middle of each line
             plt.text(
-                x_pos, y_pos,               # Position
-                f"{temp_string}",                  # Text label
-                color=color_set[i],            # Match text color to line color
-                fontsize=12,                 # Adjust font size as needed
-                fontweight='bold',          # Bold text for readability
-                ha='center',                # Centered horizontally
-                va='center',                # Centered vertically
-                backgroundcolor="white",    # Add a background to improve readability
-                alpha=0.8                   # Transparency for background color
+                x_pos, y_pos,               
+                f"{temp_string}",           
+                color=color_set[i],         
+                fontsize=12,                
+                fontweight='bold',          
+                ha='center',                
+                va='center',                
+                backgroundcolor="white",    
+                alpha=0.8                   
                 )
                 
         elif label_cond=='legend':
